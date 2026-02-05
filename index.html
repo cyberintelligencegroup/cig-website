@@ -3,55 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIG | Cyber Intelligence Group</title>
+    <title>Cyber Intelligence Group | CIG UAE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --bg: #0d1117; --text: #c9d1d9; --accent: #58a6ff; --alert: #ff7b72; }
-        body { background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', monospace; margin: 0; line-height: 1.6; }
-        header { border-bottom: 1px solid #30363d; padding: 2rem; text-align: center; }
-        .container { max-width: 800px; margin: auto; padding: 2rem; }
-        .glitch { font-size: 2rem; font-weight: bold; color: white; letter-spacing: 5px; }
-        .tagline { color: var(--accent); font-size: 0.9rem; margin-top: 10px; }
-        .section { margin-bottom: 3rem; border-left: 3px solid var(--accent); padding-left: 20px; }
-        .alert-box { background: rgba(255, 123, 114, 0.1); border: 1px solid var(--alert); padding: 15px; border-radius: 6px; }
-        footer { text-align: center; font-size: 0.8rem; padding: 2rem; border-top: 1px solid #30363d; opacity: 0.6; }
-        a { color: var(--accent); text-decoration: none; }
+        :root { --uae-gold: #b2935b; --uae-red: #da291c; --dark: #333; --light-gray: #f9f9f9; }
+        body { margin: 0; font-family: 'Montserrat', sans-serif; background-color: white; color: var(--dark); }
+        
+        /* Top Navigation Bar */
+        .top-nav { background: var(--light-gray); padding: 10px 10%; display: flex; justify-content: space-between; font-size: 12px; border-bottom: 1px solid #eee; }
+        .top-nav a { color: #666; text-decoration: none; margin-left: 15px; }
+
+        /* Main Header */
+        header { padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; background: #fff; }
+        .logo { font-weight: bold; font-size: 24px; color: var(--dark); border-left: 4px solid var(--uae-gold); padding-left: 15px; }
+        nav a { margin-left: 25px; text-decoration: none; color: var(--dark); font-weight: 500; font-size: 14px; text-transform: uppercase; }
+
+        /* Professional Hero Section */
+        .hero { 
+            position: relative; height: 500px; 
+            background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.9)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80'); 
+            background-size: cover; background-position: center;
+            display: flex; align-items: center; padding: 0 10%;
+        }
+        .hero-text { max-width: 500px; }
+        .hero-text h1 { font-size: 48px; margin-bottom: 10px; color: #222; }
+        .hero-text p { font-size: 18px; color: #555; margin-bottom: 25px; }
+        
+        /* Gold CTA Button */
+        .btn { background: var(--uae-gold); color: white; padding: 15px 35px; text-decoration: none; border-radius: 4px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #967a4a; box-shadow: 0 4px 15px rgba(178, 147, 91, 0.3); }
+
+        /* Stats Bar */
+        .stats { display: flex; justify-content: space-around; padding: 40px 10%; background: var(--light-gray); text-align: center; }
+        .stat-item h3 { color: var(--uae-gold); font-size: 32px; margin: 0; }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="glitch">CIG</div>
-    <div class="tagline">CYBER INTELLIGENCE GROUP | UAE RESEARCH COLLECTIVE</div>
-</header>
-
-<div class="container">
-    <div class="section">
-        <h2>Mission Statement</h2>
-        <p>CIG is a third-party intelligence collective. We monitor open-source data (OSINT) to identify digital threats, financial scams, and phishing campaigns targeting regional infrastructure. All verified threats are triaged and reported to official law enforcement agencies.</p>
-    </div>
-
-    <div class="section">
-        <h2>Public Threat Alerts</h2>
-        <div class="alert-box">
-            <span style="color:var(--alert)">[HIGH PRIORITY]</span> 05-FEB-2026: Identification of fraudulent UAE banking domains. Analysis submitted to authorities.
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Recruitment & Liaison</h2>
-        <p>We are currently vetting candidates for the following roles:</p>
-        <ul>
-            <li>OSINT Analyst (Digital Forensics)</li>
-            <li>Technical Liaison (Public Relations)</li>
-            <li>Blockchain Researcher</li>
-        </ul>
-        <p>Inquiries: <a href="mailto:contact.cig.group@proton.me">contact.cig.group@proton.me</a></p>
+<div class="top-nav">
+    <div>English | العربية</div>
+    <div>
+        <a href="#">Sitemap</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Contact Us</a>
     </div>
 </div>
 
+<header>
+    <div class="logo">CIG<br><span style="font-size: 12px; font-weight: normal; color: #999;">CYBER INTELLIGENCE GROUP</span></div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Intelligence Alerts</a>
+        <a href="#">Careers</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1 style="border-bottom: 5px solid var(--uae-gold); display: inline-block;">Year of Safety</h1>
+        <p>Providing advanced OSINT research to secure the digital future of the Emirates.</p>
+        <a href="mailto:contact.cig.group@proton.me" class="btn">REPORT A THREAT</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-item"><h3>150+</h3><p>Threats Mitigated</p></div>
+    <div class="stat-item"><h3>24/7</h3><p>Active Monitoring</p></div>
+    <div class="stat-item"><h3>Youth</h3><p>Led Initiative</p></div>
+</section>
+
 <footer>
-    <p>&copy; 2026 Cyber Intelligence Group. All Rights Reserved. Not a Law Enforcement Agency.</p>
-    <p>Licensed under BSD 3-Clause. Content CC BY-NC-ND 4.0.</p>
+    <p style="text-align: center; padding: 40px; color: #aaa; font-size: 12px;">© 2026 Cyber Intelligence Group. Not a Law Enforcement Entity. All investigations reported to official UAE Authorities.</p>
 </footer>
 
 </body>
